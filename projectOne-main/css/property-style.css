@@ -1,0 +1,276 @@
+:root {
+    /* Define color variables and font family */
+    --color-primary: #ff5a5f;
+    --color-secondary: #24324a;
+    --background-gray: #F7F7F7;
+    --background-pink: #FFE8E9;
+    --font-family: 'Nunito', sans-serif;
+}
+
+/* Apply font family to all elements */
+* {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic body styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header styling */
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Logo and site name styling */
+.header .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Site Name Styling */
+.site-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px; /* Adjust spacing between logo and site name */
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: #333;
+    margin: 0 10px;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Button styling */
+.btn-danger {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+/* Hover effect for buttons */
+.btn-danger:hover {
+    background-color: #ff7a7f;
+    border-color: #ff7a7f;
+}
+
+/* Card body title styling */
+.card-body h5 {
+    margin-bottom: 15px;
+}
+
+/* Remove bullets and add padding to list items */
+.list-unstyled li {
+    padding: 5px 0;
+}
+
+/* Ensure the container for the page is using Bootstrap's grid system */
+.container .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Ensure the sidebar takes up the correct column width */
+.col-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+}
+
+/* Ensure the main content area takes up the remaining space */
+.col-lg-8 {
+    flex: 0 0 66.6667%;
+    max-width: 66.6667%;
+}
+
+/* Image Gallery Styling */
+/* Apply border and rounded corners to all images in the gallery */
+.image-gallery-card img {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Main image styling (larger image on the left) */
+.image-gallery-card .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Gallery images styling (smaller images on the right) */
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Flexbox layout for right column images to align them vertically */
+.image-gallery-card .col-md-4 .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Remove padding from right column image containers */
+.image-gallery-card .col-md-4 .row .col-6 {
+    padding: 0;
+}
+
+/* Adjust height and border radius for smaller images */
+.image-gallery-card .row .col-md-4 .gallery-image {
+    height: 100px; /* Adjust height for smaller images */
+    border-radius: 10px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    /* Adjust image height and spacing for smaller screens */
+    .image-gallery-card .col-md-4 .gallery-image {
+        height: auto; /* Auto height for smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+/* Styling for the "Listed By" section */
+.listed-by-card {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styling for the heading in the "Listed By" card */
+.listed-by-card h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Styling for the agent photo in the "Listed By" section */
+.listed-by-card img {
+    border-radius: 50%; /* Make the image circular */
+    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    object-fit: cover; /* Ensure the image fits the container */
+}
+
+/* Styling for text in the "Listed By" section */
+.listed-by-card p {
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Styling for the contact button in the "Listed By" section */
+.listed-by-card .contact-agent-btn {
+    background-color: var(--color-primary);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Hover effect for the contact button in the "Listed By" section */
+.listed-by-card .contact-agent-btn:hover {
+    background-color: #ff7a7f;
+}
+
+/* General body and container styling to prevent overflow issues */
+body, .container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Additional styling for the rest of the content */
+/* Card container styling */
+.card {
+    border: 1px solid #ddd;
+}
+
+/* Card body padding */
+.card-body {
+    padding: 20px;
+}
+
+/* Remove padding from list items inside cards */
+.card-body ul {
+    padding-left: 0;
+}
+
+/* Add padding to each list item inside cards */
+.card-body ul li {
+    padding: 5px 0;
+}
+
+/* Styling for links inside card lists */
+.card-body ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Hover effect for links inside card lists */
+.card-body ul li a:hover {
+    color: var(--color-primary);
+}
+
+
+/* Map responsive styling */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    position: relative;
+    height: 0;
+}
+
+/* Ensure the map iframe fills the container */
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+/* footer */
+.whole-footer{
+    background-color: var(--color-secondary);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer{
+    background-color: var(--color-secondary);
+}
+.dark-footer{
+    background-color: #131b29;
+    padding: 20px 0;
+}
+footer input{
+border-radius: 15px;
+border:  none;
+background-color: rgba(255, 255, 255, 0.199);
+  }
+footer .cicleBtn{
+background-color: rgba(255, 255, 255, 0.199);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: none;
+}
