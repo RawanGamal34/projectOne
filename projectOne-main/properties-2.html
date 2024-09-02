@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FindHouse | Properties</title>
+    <link rel="icon" href="images/logo.png">
     <link rel="stylesheet" href="css/properties.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
@@ -16,83 +17,79 @@
 
 <body>
 
-    <section class="backGroung" id="home">
-        <div class="overlay">
-            <div class="container-fluid">
-                <!--start nav bar -->
-                <nav class="row">
-                    <div class="col-lg-6 p-3">
+    <header class="container-fluid" id="upper">
+        <!--start nav bar -->
+        <nav class="row">
+            <div class="col-lg-6 p-3">
+                <div class="logo d-flex align-items-end">
+                    <img src="images/logo.png" alt="logo">
+                    <h5 class="text-dark"> <b>FindHouse</b></h5>
+                </div>
+            </div>
+            <div class="col-lg-6 p-3">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="Home-1.html">Home</a></li>
+                    <li><a href="properties-2.html">Property</a></li>
+                    <li><a href="sevices-4.html">Services</a></li>
+                    <li><a href="blog-5.html">Blog</a></li>
+                    <li><a href="about-us-8.html">About Us</a></li>
+                    <li><a href="contact-us-7.html">Contact US</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav responsive -->
+        <div class="row menue">
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
                         <div class="logo d-flex align-items-end">
-                            <img src="images/logo-2.png" alt="logo">
+                            <img src="images/logo.png" alt="">
                             <h5 class="text-white">FindHouse</h5>
                         </div>
-                    </div>
-                    <div class="col-lg-6 p-3">
-                        <ul class="d-flex justify-content-end">
-                            <li><a href="Home-1.html">Home</a></li>
-                            <li><a href="properties-2.html">Property</a></li>
-                            <li><a href="sevices-4.html">Services</a></li>
-                            <li><a href="blog-5.html">Blog</a></li>
-                            <li><a href="about-us-8.html">About Us</a></li>
-                            <li><a href="contact-us-7.html">Contact US</a> </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- nav responsive -->
-                <div class="row menue">
-                    <nav class="navbar fixed-top">
-                        <div class="container-fluid">
-                            <a class="navbar-brand" href="#">
-                                <div class="logo d-flex align-items-end">
-                                    <img src="images/logo-2.png" alt="">
-                                    <h5 class="text-white">FindHouse</h5>
-                                </div>
-                            </a>
-                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
-                                aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                            </button>
-                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                                aria-labelledby="offcanvasNavbarLabel">
-                                <div class="offcanvas-header">
-                                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FindHouse Menue</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="offcanvas-body">
-                                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                                        <li class="nav-item">
-                                            <a class="nav-link active " aria-current="page" href="Home-1.html">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="properties-2.html">Property</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="sevices-4.html">Services</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="blog-5.html">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="about-us-8.html">About Us</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="contact-us-7.html">Contact US</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-                            </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FindHouse Menue</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
                         </div>
-                    </nav>
-                </div>
-                <!-- end of nav bar -->
-            </div>
-        </div>
-    </section>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Home-1.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="properties-2.html">Property</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sevices-4.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog-5.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us-8.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us-7.html">Contact US</a>
+                                </li>
 
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- end of nav bar -->
+
+    </header>
     <!-- Start of Properties section -->
     <section class="properties propertiesBackground">
         <div class="container">
@@ -100,7 +97,7 @@
                 <span class="homeSpan">Home / <span class="propertiesSpan">Properties</span></span>
                 <h2>Get all properties</h2>
                 <div class="col-lg-4 p-3 leftSection">
-                     <div class="leftSearchSection">
+                    <div class="leftSearchSection">
                         <input type="search" placeholder="Keyword" class="searchHolder">
                         <input type="search" placeholder="Location" class="searchHolder">
                         <input type="search" placeholder="Status" class="searchHolder">
@@ -119,37 +116,37 @@
                         </div>
                         <p class="features">: Advanced Features</p>
                         <button>Clear Filters</button>
-                     </div>
-                     <div class="categoriesProperties">
+                    </div>
+                    <div class="categoriesProperties">
                         <h6>Categories Properties</h6>
                         <div class="row justify-content-evenly cat">
-                            
-                                <div class="col-lg-6 col-sm-4 p-3">
-                                    <ul>
-                                        <li><i class='fas fa-caret-right'></i>Apartement</li>
-                                        <li><i class='fas fa-caret-right'></i>Condo</li>
-                                        <li><i class='fas fa-caret-right'></i>Family House</li>
-                                        <li><i class='fas fa-caret-right'></i>Modern Villa</li>
-                                        <li><i class='fas fa-caret-right'></i>Town House</li> 
-                                    </ul>
-                                </div>
-                                <div class="col-lg-6 col-sm-4 p-3">
-                                    <ul>
-                                        <li>6 properties</li>
-                                        <li>12 properties</li>
-                                        <li>8 properties</li>
-                                        <li>26 properties</li>
-                                        <li>89 properties</li> 
-                                    </ul>
-                                </div>
-                            
+
+                            <div class="col-lg-6 col-sm-4 p-3">
+                                <ul>
+                                    <li><i class='fas fa-caret-right'></i>Apartement</li>
+                                    <li><i class='fas fa-caret-right'></i>Condo</li>
+                                    <li><i class='fas fa-caret-right'></i>Family House</li>
+                                    <li><i class='fas fa-caret-right'></i>Modern Villa</li>
+                                    <li><i class='fas fa-caret-right'></i>Town House</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6 col-sm-4 p-3">
+                                <ul>
+                                    <li>6 properties</li>
+                                    <li>12 properties</li>
+                                    <li>8 properties</li>
+                                    <li>26 properties</li>
+                                    <li>89 properties</li>
+                                </ul>
+                            </div>
+
                         </div>
-                     </div>
-                     <div class="categoriesProperties featuredProperties">
+                    </div>
+                    <div class="categoriesProperties featuredProperties">
                         <h6>Featured Properties</h6>
                         <img src="images/download (1).jfif" alt="">
-                     </div>
-                     <div class="recentlyViewedSection">
+                    </div>
+                    <div class="recentlyViewedSection">
                         <h6>Recently Viewed</h6>
                         <div class="row spaceRows">
                             <div class="col-lg-4">
@@ -160,7 +157,7 @@
                                 <p class="pricePar">$19000//mo</p>
                                 <div class="row countCont">
                                     <div class="col-lg-3">
-                                         <p>Beds:1</p>
+                                        <p>Beds:1</p>
                                     </div>
                                     <div class="col-lg-3">
                                         <p>Baths:1</p>
@@ -180,7 +177,7 @@
                                 <p class="pricePar">$19000//mo</p>
                                 <div class="row countCont">
                                     <div class="col-lg-3">
-                                         <p>Beds:1</p>
+                                        <p>Beds:1</p>
                                     </div>
                                     <div class="col-lg-3">
                                         <p>Baths:1</p>
@@ -200,7 +197,7 @@
                                 <p class="pricePar">$19000//mo</p>
                                 <div class="row countCont">
                                     <div class="col-lg-3">
-                                         <p>Beds:1</p>
+                                        <p>Beds:1</p>
                                     </div>
                                     <div class="col-lg-3">
                                         <p>Baths:1</p>
@@ -211,24 +208,26 @@
                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
                 <div class="col-lg-8 p-3">
-                     <div class="searchResults">
-                        <div><p class="contentcentring">10 search results</p></div>
+                    <div class="searchResults">
+                        <div>
+                            <p class="contentcentring">10 search results</p>
+                        </div>
                         <div class="status contentcentring">
                             <span class="statusAll">Status:All Status <i class="fas fa-sort-down"></i>
                             </span>
                             <span class="FeatureAll">Sort by:Featured ALL <i class="fas fa-sort-down"></i></span>
                         </div>
-                     </div>
-                     <div class=" Images">
+                    </div>
+                    <div class=" Images">
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -240,7 +239,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -253,17 +252,17 @@
                                     <div class="afterContent"></div>
                                     <div class="lastSection ">
 
-                                            <img src="images/Ian-GA.png" alt="">
-                                            <span class="text-start">Ali Tufan</span>
-                                            <span class="text-sm-end one">1 Year ago</span>
+                                        <img src="images/Ian-GA.png" alt="">
+                                        <span class="text-start">Ali Tufan</span>
+                                        <span class="text-sm-end one">1 Year ago</span>
                                     </div>
-                                 </div>
+                                </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -275,7 +274,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -291,15 +290,15 @@
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
                                     </div>
-                                 </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -311,7 +310,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -331,9 +330,9 @@
                             </div>
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -345,7 +344,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -360,17 +359,17 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -382,7 +381,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -397,14 +396,14 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -416,7 +415,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -431,16 +430,16 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -452,7 +451,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -467,14 +466,14 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -486,7 +485,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -501,16 +500,16 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -522,7 +521,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -537,14 +536,14 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                             <div class="col-lg-6">
                                 <div class="propertiesImage">
-                                    <div >
+                                    <div>
                                         <img src="images/download.jfif" alt="This is an image">
-                                        <div class="afterImage" >
+                                        <div class="afterImage">
                                             <span class="feature">Featured</span>
                                             <span class="sale">Sale</span>
                                         </div>
@@ -556,7 +555,7 @@
                                     <div class="counterContent">
                                         <div class="row">
                                             <div class="col">
-                                                 <p>Beds: 1</p>
+                                                <p>Beds: 1</p>
                                             </div>
                                             <div class="col">
                                                 <p>Baths: 1</p>
@@ -571,11 +570,11 @@
                                         <img src="images/Ian-GA.png" alt="">
                                         <span class="text-start">Ali Tufan</span>
                                         <span class="text-sm-end one">1 Year ago</span>
+                                    </div>
                                 </div>
-                                 </div>
                             </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -691,7 +690,8 @@
             </div>
         </div>
     </footer>
-
+    <a href="#upper" class="up d-flex justify-content-center align-items-center text-decoration-none"><i
+            class="fa-solid fa-arrow-up text-white"></i></a>
     <script src="js/script.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
