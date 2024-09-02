@@ -51,7 +51,97 @@ color: var(--color-primary);
 .backGroung .title{
     margin-top: 33dvh;
  }
+ /* slider */
 
+.slider {
+    overflow: hidden;
+    background-color: var(--background-gray);
+}
+.cards {
+    transition: transform 0.5s ease;
+}
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+.slider .card h6{
+    margin-top: 7px;
+    color: var(--color-primary);
+}
+.slider ul li{
+    padding-inline-end: 20px;
+}
+.slider .images {
+    position: relative;
+}
+.slider .btns{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.slider .btns .featturedBtn{
+  background-color: var(--color-secondary);
+  color: white;
+  border: none;
+  border-radius: 10px; margin-inline-end:7px;
+}
+.slider .btns .stateBtn{
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: 10px; margin-inline-end:7px;
+}
+.slider .images .price{
+    bottom: 10px;
+    padding: 0 10px;
+    position: absolute;
+    font-weight: bold;
+    width: 100%;
+}
+.slider .blackBox{
+    background-color: rgba(0, 0, 0, 0.589);
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 7px;
+}
+.slider .blackBox i{
+    color: white;
+}
+
+/* end of slider */
+
+/* cities */
+.miami{
+    height: 200px;
+}
+.losAngeles{
+    height: 200px;
+}
+.NewYork{
+    height: 200px;
+    
+}
+.Florida{
+    height: 200px;
+
+}
+.cities .cityName{
+    position: absolute;
+    bottom: 10px;
+left: 30%;
+}
  /*  Why choose Us */
  .chooseUS{
     background-color: var(--background-gray);
@@ -73,7 +163,7 @@ font-size: 45px;
 .chooseUS .card h6{
     color: var(--color-primary);
 }
-.chooseUS .images img{
+ .images img{
     width: 100%;
     height: 250px;
 } 
