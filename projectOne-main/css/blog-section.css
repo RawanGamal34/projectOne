@@ -13,6 +13,39 @@
     box-sizing: border-box;
 }
 
+
+
+header{
+    background-color: white;
+}
+/* nav bar */
+nav ul li {
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: black;
+}
+nav ul li a:hover{
+color: var(--color-primary);
+}
+@media screen and (max-width: 1084px) {
+    nav .col-lg-6{
+        display: none; 
+    }
+    .menue {
+        display: block;
+    }
+}
+@media screen and (min-width: 1084px) {
+    .navbar .navbar-brand ,.navbar-toggler{
+        display: none; 
+    }
+  
+}
+/* end of nav */
 /* Blog Section Style */
 .blog {
     padding: 40px 0;
@@ -119,4 +152,37 @@ hr {
     .grid {
         grid-template-columns: 1fr;
     }
+}
+/* footer */
+
+footer{
+    background-color: var(--color-secondary);
+}
+.dark-footer{
+    background-color: #131b29;
+    padding: 20px 0;
+}
+footer input{
+border-radius: 15px;
+border:  none;
+background-color: rgba(255, 255, 255, 0.199);
+  }
+footer .cicleBtn{
+background-color: rgba(255, 255, 255, 0.199);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: none;
+}
+/* end footer */
+/* up botton */
+.up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0e151f;
+
 }
