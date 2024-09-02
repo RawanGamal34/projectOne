@@ -1,0 +1,116 @@
+:root{
+    --color-primary: #ff5a5f;
+    --color-secondary:#24324a;
+    --background-gray:#F7F7F7;
+    --background-pink:#FFE8E9;
+    --font-family: 'Nunito', sans-serif;
+    
+    }
+
+/* Page Header Styling */
+.page-header {
+    background: url('images/header.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0; /* Adjust the padding to fit the desired height */
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.page-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Header styling */
+header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+/* Logo and site name styling */
+.header .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+/* Site Name Styling */
+.site-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px; /* Adjust spacing between logo and site name */
+}
+
+/* Navigation link styling */
+.nav-link {
+    color: #333;
+    margin: 0 10px;
+}
+
+/* Hover effect for navigation links */
+.nav-link:hover {
+    color: var(--color-primary);
+}
+
+/* Button styling */
+.btn-danger {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+.form-control {
+    padding: 15px; /* Increased padding for better usability */
+    border-radius: 5px; /* Subtle rounding of edges */
+    border: 1px solid #ddd;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 5px rgba(255, 90, 95, 0.5);
+}
+
+.btn-danger {
+    background-color: var(--color-primary);
+    border: none;
+    padding: 15px 30px; /* Increased padding for a more prominent button */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-danger:hover {
+    background-color: #ff6b6b; /* Slightly lighter shade on hover */
+}
+
+/* footer */
+.red-bar{
+    background-color: var(--color-primary);
+} 
+.red-bar button{
+    background-color: #ffffff4f;
+}
+footer{
+    background-color: var(--color-secondary);
+}
+.dark-footer{
+    background-color: #131b29;
+    padding: 20px 0;
+}
+footer input{
+border-radius: 15px;
+border:  none;
+background-color: rgba(255, 255, 255, 0.199);
+  }
+footer .cicleBtn{
+background-color: rgba(255, 255, 255, 0.199);
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: none;
+}
+/* end footer */
+
