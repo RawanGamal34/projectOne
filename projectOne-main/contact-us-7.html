@@ -11,42 +11,92 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,500,600,700&amp;display=swap" rel="stylesheet"
         data-optimized-fonts="true">
-        <style>
-            .page-header {
-                background: url('header.jpg') no-repeat center center;
-                background-size: cover;
-                padding: 100px 0;
-                color: white;
-                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-            }
-        </style>
+    <style>
+        .page-header {
+            background: url('header.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
 </head>
 
 <body>
-     <!-- Header -->
-     <header class="bg-white shadow-sm">
-        <div class="container d-flex justify-content-between align-items-center py-3">
-            <div class="d-flex align-items-center">
-                <!-- Logo -->
-                <a href="#" class="navbar-brand">
-                    <img src="images/logo.png" alt="Logo" height="40">
-                </a>
-                <!-- Site Name -->
-                <span class="site-name ml-2">FindHouse</span>
+    <!-- Header -->
+    <header class="container-fluid" id="upper">
+        <!--start nav bar -->
+        <nav class="row">
+            <div class="col-lg-6 p-3">
+                <div class="logo d-flex align-items-end">
+                    <img src="images/logo.png" alt="logo">
+                    <h5 class="text-dark"> <b>FindHouse</b></h5>
+                </div>
             </div>
-            <nav class="d-flex">
-                <a href="#" class="nav-link">Home</a>
-                <a href="#" class="nav-link">Property</a>
-                <a href="#" class="nav-link">Services</a>
-                <a href="#" class="nav-link">Blog</a>
-                <a href="#" class="nav-link">About Us</a>
-                <a href="#" class="nav-link">Contact Us</a>
+            <div class="col-lg-6 p-3">
+                <ul class="d-flex justify-content-end">
+                    <li><a href="Home-1.html">Home</a></li>
+                    <li><a href="properties-2.html">Property</a></li>
+                    <li><a href="sevices-4.html">Services</a></li>
+                    <li><a href="blog-5.html">Blog</a></li>
+                    <li><a href="about-us-8.html">About Us</a></li>
+                    <li><a href="contact-us-7.html">Contact US</a> </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- nav responsive -->
+        <div class="row menue">
+            <nav class="navbar fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <div class="logo d-flex align-items-end">
+                            <img src="images/logo.png" alt="">
+                            <h5 class="text-white">FindHouse</h5>
+                        </div>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">FindHouse Menue</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="Home-1.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="properties-2.html">Property</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sevices-4.html">Services</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog-5.html">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about-us-8.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact-us-7.html">Contact US</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
             </nav>
-            <a href="#" class="btn btn-danger">Register</a>
         </div>
+        <!-- end of nav bar -->
+
     </header>
-
-
     <!-- Main Content -->
     <main>
         <!-- Page Header -->
@@ -63,7 +113,8 @@
                 <!-- Contact Form -->
                 <div class="col-lg-7 mb-4">
                     <h3 class="mb-4">Send Us An Email</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend ornare. Maecenas mattis enim at arcu feugiat, sit amet blandit nisi iaculis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend ornare.
+                        Maecenas mattis enim at arcu feugiat, sit amet blandit nisi iaculis.</p>
                     <form action="#" method="POST">
                         <div class="form-row">
                             <div class="col-md-6 mb-3">
@@ -92,7 +143,8 @@
                 <div class="col-lg-5">
                     <div class="contact-info bg-light p-4 rounded">
                         <h3 class="mb-4">Contact Us</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend ornare.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida quis libero eleifend
+                            ornare.</p>
                         <ul class="list-unstyled">
                             <li><strong>Address:</strong> 2301 Ravenswood Rd Madison, WI 53711</li>
                             <li><strong>Phone:</strong> (315) 905-2321</li>
@@ -115,7 +167,9 @@
         <section class="map-section">
             <div class="container">
                 <div class="embed-responsive embed-responsive-16by9">
-                    <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2099672819413!2d-122.41941638468223!3d37.77492927975878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2b8a7df%3A0x7cb7e7b9ae5b8a6d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1596846955235!5m2!1sen!2sus" allowfullscreen=""></iframe>
+                    <iframe class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.2099672819413!2d-122.41941638468223!3d37.77492927975878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064c2b8a7df%3A0x7cb7e7b9ae5b8a6d!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1596846955235!5m2!1sen!2sus"
+                        allowfullscreen=""></iframe>
                 </div>
             </div>
         </section>
@@ -232,7 +286,7 @@
         </div>
     </footer>
     <!-- Back to Top Button -->
-    <a href="#home" class="up d-flex justify-content-center align-items-center text-decoration-none">
+    <a href="#upper" class="up d-flex justify-content-center align-items-center text-decoration-none">
         <i class="fa-solid fa-arrow-up text-white"></i>
     </a>
 
@@ -242,4 +296,3 @@
 </body>
 
 </html>
-
