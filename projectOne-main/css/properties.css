@@ -295,7 +295,7 @@ h2{
 .downImage span{
     position: absolute;
     content: "";
-    top: 45%;
+    top: 30%;
     padding: 16px;
     color: white;
     font-weight: 800;
