@@ -7,37 +7,42 @@
     
     }
 
-/* Page Header Styling */
-.page-header {
-    background: url('images/header.jpg') no-repeat center center;
-    background-size: cover;
-    padding: 100px 0; /* Adjust the padding to fit the desired height */
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.page-header h1 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.page-header p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-/* Header styling */
-header {
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
-}
-
-/* Logo and site name styling */
-.header .navbar-brand {
-    display: flex;
-    align-items: center;
-}
-
+        *{
+            font-family: var(--font-family);
+        }
+    
+    
+    header{
+        background-color: white;
+    }
+    /* nav bar */
+    nav ul li {
+        list-style: none;
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 0 10px;
+        cursor: pointer;
+        color: black;
+    }
+    nav ul li a:hover{
+    color: var(--color-primary);
+    }
+    @media screen and (max-width: 1084px) {
+        nav .col-lg-6{
+            display: none; 
+        }
+        .menue {
+            display: block;
+        }
+    }
+    @media screen and (min-width: 1084px) {
+        .navbar .navbar-brand ,.navbar-toggler{
+            display: none; 
+        }
+      
+    }
+    /* end of nav */
 /* Site Name Styling */
 .site-name {
     font-size: 24px;
@@ -114,3 +119,14 @@ border: none;
 }
 /* end footer */
 
+/* up botton */
+.up{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #0e151f;
+
+}
